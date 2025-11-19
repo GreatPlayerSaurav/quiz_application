@@ -2,7 +2,7 @@
 let questions =[];
 const getData = async()=>{
     
-    const data = await fetch("http://localhost:5000/questions");
+    const data = await fetch("https://quiz-application-sage-delta.vercel.app/questions");
     const res  = await data.json();
     questions = res
 }
